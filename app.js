@@ -48,7 +48,7 @@ function launchQuiz() {
         response += ' and you are a very attentive reader!';
     }
     else {
-        response += ' and you need to learn how to read! Damn! Reading this terrible color contrast is your punishment!';
+        response += ' and you need to learn how to read! Damn!';
     }
 
     result.textContent = response;
@@ -58,7 +58,7 @@ function launchQuiz() {
     let scoreStyle = document.getElementById('score-style');
 
     if (correctAnswers >= 1) {
-        scoreStyle.style.color = 'purple';
+        scoreStyle.style.color = 'green';
     }
     else {
         scoreStyle.style.color = 'red';
