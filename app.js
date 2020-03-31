@@ -1,4 +1,4 @@
-import isYes from "./is-yes.js";
+import isYes from './is-yes.js';
 
 const quizButton = document.getElementById('quiz-button');
 
@@ -28,7 +28,7 @@ function launchQuiz() {
 
     const isOnion = prompt(`${name}, are onions my least favorite food?`);
 
-    const isChina = prompt(`${name}, have I been to The Great Wall of China?`);
+    const toChina = prompt(`${name}, have I been to The Great Wall of China?`);
 
     if (isYes(isLeo) === true) {
         correctAnswers++;
@@ -37,34 +37,32 @@ function launchQuiz() {
     if (isYes(isOnion) === true){
         correctAnswers++;
 
-        if (isYes(isChina) === true) {
+        if (isYes(toChina) === true) {
             correctAnswers++;
         }
     }
 
-
-
     let response = 'Your name is ' + name;
 
-if (correctAnswers >=1) {
-    response+= ' and you are a very attentive reader!';
-}
-else {
-    response += ' and you need to learn how to read! Damn! Reading this terrible color contrast is your punishment!';
-}
+    if (correctAnswers >= 1) {
+        response += ' and you are a very attentive reader!';
+    }
+    else {
+        response += ' and you need to learn how to read! Damn! Reading this terrible color contrast is your punishment!';
+    }
 
-result.textContent = response;
+    result.textContent = response;
 
-scoreMessage.textContent = `Okay ${name}, you got ${correctAnswers}/3`;
+    scoreMessage.textContent = `Okay ${name}, you got ${correctAnswers}/3`;
 
-let scoreStyle = document.getElementById('score-style');
+    let scoreStyle = document.getElementById('score-style');
 
-if (correctAnswers >= 1) {
-    scoreStyle.style.color ="purple";
-}
-else {
-    scoreStyle.style.color ="red";
-}
+    if (correctAnswers >= 1) {
+        scoreStyle.style.color = 'purple';
+    }
+    else {
+        scoreStyle.style.color = 'red';
+    }
 }
 
 quizButton.addEventListener('click', launchQuiz);
