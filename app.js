@@ -50,7 +50,7 @@ if (correctAnswers >=1) {
     response+= ' and you are a very attentive reader!';
 }
 else {
-    response += ' and you need to learn how to read! Damn!';
+    response += ' and you need to learn how to read! Damn! Reading this terrible color contrast is your punishment!';
 }
 
 result.textContent = response;
@@ -60,7 +60,7 @@ scoreMessage.textContent = `Okay ${name}, you got ${correctAnswers}/3`;
 let scoreStyle = document.getElementById('score-style');
 
 if (correctAnswers >= 1) {
-    scoreStyle.style.color ="green";
+    scoreStyle.style.color ="purple";
 }
 else {
     scoreStyle.style.color ="red";
