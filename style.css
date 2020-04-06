@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: deepskyblue;
+    background: -webkit-linear-gradient(deepskyblue, lightblue)
+}
+
+#container {
+    margin: 200px auto;
+    width: 70%;
+    padding: 30px;
+    border: 2px solid blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 3px 3px 20px 3px darkblue;
+    color: darkblue;
+    
+}
+
+section div {
+    margin-top: 20px;
+}
+
+section {
+    border: 2px solid blue;
+    margin: 20px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px 2px darkblue;
+}
+
+button {
+    margin: 1px auto;
+    margin-top: 60px;
+    border: 2px solid darkblue;
+    height: 150px;
+    width: 400px;
+    border-radius: 100px 40px 100px 40px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px darkblue;
+    color: darkblue;
+    font-size: 50px;
+    font-weight: bold;
+    transition: background linear .4s;
+}
+
+button:hover {
+    background: orange;
+}
+
+
+img {
+    width: 480px;
+    height: 480px;
+    object-fit: cover;
+    border: 2px solid blue;
+    transition: left linear 0.2s, width linear 0.2s, height linear 0.2s;
+    border-radius: 20px 20px 0px 0px;
+}
+
+img:hover {
+    height: 515px;
+    width: 515px;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+}
+
+
+
+li {
+    text-align: left;
+    margin: 20px;
+    width: 50%;
+    
+}
+
+#score-style {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h1 {
+    padding: 15px
+}
